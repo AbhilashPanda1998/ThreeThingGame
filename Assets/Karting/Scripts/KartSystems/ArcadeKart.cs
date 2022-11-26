@@ -7,6 +7,7 @@ namespace KartGame.KartSystems
 {
     public class ArcadeKart : MonoBehaviour
     {
+       
         [System.Serializable]
         public class StatPowerup
         {
@@ -163,7 +164,7 @@ namespace KartGame.KartSystems
 
         // Drift params
         public bool WantsToDrift { get; private set; } = false;
-        public bool IsDrifting { get; private set; } = false;
+        public bool IsDrifting { get;  set; } = false;
         float m_CurrentGrip = 1.0f;
         float m_DriftTurningPower = 0.0f;
         float m_PreviousGroundPercent = 1.0f;
@@ -230,9 +231,10 @@ namespace KartGame.KartSystems
             spring.damper = SuspensionDamp;
             wheel.suspensionSpring = spring;
         }
-
+       
         void Awake()
         {
+           
             Rigidbody = GetComponent<Rigidbody>();
             m_Inputs = GetComponents<IInput>();
 
