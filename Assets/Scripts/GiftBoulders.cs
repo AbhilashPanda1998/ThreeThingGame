@@ -5,6 +5,7 @@ using System;
 
 public class GiftBoulders : IceBoulders
 {
+    public static Action OnGiftPickUp;
 
     public override void Start()
     {
@@ -18,6 +19,9 @@ public class GiftBoulders : IceBoulders
 
     protected override void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.transform.tag == "Player")
+        {
+            OnGiftPickUp?.Invoke();
+        }
     }
 }

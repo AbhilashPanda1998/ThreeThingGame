@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8286804760014837057}
   - component: {fileID: 1102260576}
   - component: {fileID: 1102260575}
+  - component: {fileID: -5809433859293301552}
   m_Layer: 0
   m_Name: IceBoulders
   m_TagString: Untagged
@@ -97,8 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 1102260576}
-  m_MinSpeed: 5
-  m_MaxSpeed: 10
+  m_MinSpeed: 10
+  m_MaxSpeed: 15
 --- !u!54 &1102260576
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -128,3 +129,16 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.004190182
   m_Center: {x: -0.0002574527, y: -0.00009248149, z: 0.00003002025}
+--- !u!114 &-5809433859293301552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6630524159883821356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83b7ee5196fb42242adba6c22c12e5c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 7
