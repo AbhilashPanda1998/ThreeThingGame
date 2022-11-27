@@ -7,15 +7,24 @@ public class snowydriftscript : MonoBehaviour
 {
     public GameObject arcadescript;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider Player)
     {
-        Debug.Log("Enable drift");
-        arcadescript.GetComponent<ArcadeKart>().IsDrifting = true;
+        if (Player.gameObject.tag == "Player")
+        {
+            //do things
+            Debug.Log("Enable drift");
+            arcadescript.GetComponent<ArcadeKart>().IsDrifting = true;
+        }
+       
 
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider Player)
     {
-        Debug.Log("disable drift");
-        arcadescript.GetComponent<ArcadeKart>().IsDrifting = false;
+        if (Player.gameObject.tag == "Player")
+        {
+            //do things
+            Debug.Log("disable drift");
+            arcadescript.GetComponent<ArcadeKart>().IsDrifting = false;
+        }
     }
 }
