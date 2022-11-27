@@ -87596,7 +87596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1701453883}
   - component: {fileID: 1701453884}
-  m_Layer: 2
+  m_Layer: 13
   m_Name: KartBouncingCapsule
   m_TagString: Player
   m_Icon: {fileID: 0}
