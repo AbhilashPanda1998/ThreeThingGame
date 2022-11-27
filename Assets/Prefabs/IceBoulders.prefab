@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 1102260576}
-  m_MinSpeed: 10
-  m_MaxSpeed: 25
+  m_MinSpeed: 15
+  m_MaxSpeed: 30
 --- !u!54 &1102260576
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -141,4 +141,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b7ee5196fb42242adba6c22c12e5c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 12
+  time: 15
