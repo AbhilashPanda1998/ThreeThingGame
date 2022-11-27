@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Karting/Scenes/WinScene.unity
     guid: d6801f2e59f75ee4b919cf5da4e48e3b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Karting/Scenes/TestScene.unity
     guid: b6fb5abea20d5ea4db1c0cc16d01107b
   m_configObjects: {}
