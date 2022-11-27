@@ -55,6 +55,8 @@ public class ObjectiveToast : MonoBehaviour
     AudioSource m_AudioSource;
     RectTransform m_RectTransform;
 
+    public TMPro.TextMeshProUGUI healthText;
+
     public void Initialize(string titleText, string descText, string counterText, bool isOptionnal, float delay)
     {
         // set the description for the objective, and forces the content size fitter to be recalculated
@@ -184,5 +186,10 @@ public class ObjectiveToast : MonoBehaviour
         }
 
         m_AudioSource.PlayOneShot(sound);
+    }
+
+    public void SetHealth(string healthTextData)
+    {
+        healthText.text = healthTextData;
     }
 }
