@@ -6568,7 +6568,7 @@ PrefabInstance:
     - target: {fileID: 6435499550973355434, guid: d5cf9c31208d745c1856acc71c9cb1ca,
         type: 3}
       propertyPath: totalTimeInSecs
-      value: 180
+      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: 6435499550973355434, guid: d5cf9c31208d745c1856acc71c9cb1ca,
         type: 3}
