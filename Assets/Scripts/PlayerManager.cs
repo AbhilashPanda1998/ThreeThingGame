@@ -35,7 +35,7 @@ public class PlayerManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         toast = GameObject.FindObjectOfType<ObjectiveToast>();
-        string message = currentHealth.ToString() + " / " + maxHealth.ToString();
+        string message = currentHealth.ToString();
         toast.SetHealth(message);
     }
 }
