@@ -147,7 +147,7 @@ public class GameFlowManager : MonoBehaviour
         }
     }
 
-    void EndGame(bool win)
+    void EndGame(bool win, string msg = null)
     {
         // unlocks the cursor before leaving the scene, to be able to click buttons
         Cursor.lockState = CursorLockMode.None;
@@ -183,5 +183,10 @@ public class GameFlowManager : MonoBehaviour
             loseDisplayMessage.delayBeforeShowing = delayBeforeWinMessage;
             loseDisplayMessage.gameObject.SetActive(true);
         }
+    }
+
+    public void HealthOver()
+    {
+        EndGame(false);
     }
 }
